@@ -7,6 +7,7 @@
 }
 
 body {
+  user-select: none;
   font-family: 'line', sans-serif;
   margin: 0;
   height: 100vh;
@@ -34,12 +35,69 @@ body {
 .text {
   color: rgb(255, 255, 255);
   margin-left: 50%; 
-  font-size: 2.8em; 
-  margin-top: -6%;
+  font-size: 2.7em; 
+  margin-top: -5%;
 }
-.social {
-  margin-top: -23%;
-  margin-left: 4%;
+.social a {
+
   color: rgb(255, 255, 255);
 
+}
+.social:hover {
+  color: azure;
+}
+
+.social {
+  font-size: 1.9em; 
+  position: absolute; 
+  top: 96%;           
+  left: 02%;          
+  transform: translateY(-50%); 
+  color: rgb(255, 255, 255);
+}
+@media (max-width: 768px) {
+  .logo {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 10px;
+  }
+
+  .ttt {
+    margin-left: 0;
+    text-align: center;
+    font-size: 4em;
+    margin-top: 20px;
+  }
+
+  .text {
+    margin-left: 0;
+    text-align: center;
+    font-size: 1.5em;
+    margin-top: 10px;
+  }
+
+  .social {
+    flex-direction: column; /* Разместить ссылки вертикально */
+    left: 50%;
+    gap: 5px;
+  }
+
+  .social a {
+    font-size: 1.2em;
+  }
+}
+
+/* Стили для очень маленьких устройств (ширина экрана до 480px) */
+@media (max-width: 480px) {
+  .ttt {
+    font-size: 3em;
+  }
+
+  .text {
+    font-size: 1.2em;
+  }
+
+  .social a {
+    font-size: 1em;
+  }
 }
