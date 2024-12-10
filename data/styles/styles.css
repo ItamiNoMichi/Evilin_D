@@ -11,7 +11,9 @@ body {
   font-family: 'line', sans-serif;
   margin: 0;
   height: 100vh;
-  background-image: url('/data/images/bg1.png'); 
+  background-image: url('/images/bg1.png');
+
+  background-image: url('/data/styles/images/bg.png'); 
   background-size: cover;
   overflow: hidden;
 }
