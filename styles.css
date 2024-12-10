@@ -1,7 +1,7 @@
 @font-face {
   font-family: 'line';
-  src: url('/data/fonts/Lumios-Marker.woff2') format('woff2'),
-       url('/data/fonts/Lumios-Marker.woff') format('woff');
+  src: url('fonts/Lumios-Marker.woff2') format('woff2'),
+       url('fonts/Lumios-Marker.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
@@ -11,9 +11,7 @@ body {
   font-family: 'line', sans-serif;
   margin: 0;
   height: 100vh;
-  background-image: url('/images/bg1.png');
-
-  background-image: url('/data/styles/images/bg.png'); 
+  background-image: url('/images/bg.png'); 
   background-size: cover;
   overflow: hidden;
 }
